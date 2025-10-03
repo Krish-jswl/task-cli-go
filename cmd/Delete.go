@@ -24,6 +24,7 @@ func DeleteTask(id int) {
 
 	if !deleted {
 		fmt.Println("Index not found:", id)
+		return
 	}
 
 	for i := range tasks {

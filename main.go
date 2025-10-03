@@ -19,6 +19,7 @@ func main() {
 	switch arg[0] {
 		case "add": if len(arg) < 2 {
 			fmt.Println("Error: No task provided!")
+			cmd.Help()
 			return
 		}
 		cmd.AddTask(arg[1])
